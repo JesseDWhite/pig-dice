@@ -38,8 +38,16 @@ $(document).ready(function () {
         currentPlayer.totalScore += currentPlayer.tempScore;
         currentPlayer.switchPlayer();
     })
-    const playerOneScore = playerOne;
+    const playerOneScore = playerOne.totalScore;
     const playerTwoScore = playerTwo;
     $("#player-one").text(`Player One Info: ${playerOneScore}`);
     $("#player-two").text(`Player Two Info: ${playerTwoScore}`);
 })
+
+
+// try keys and/or values
+// if that doesn't work, use dot notation to display each score/name
+// build marker for current player
+// set winning threshold
+// build out computer player option if everything is complete
+// use two card views for each player that will display the running totals. Each will have their own buttons per card.
