@@ -16,35 +16,48 @@
 </head>
 
 <body>
-    <h1>Pig Dice</h1>
     <div class="container">
-        <form>
-            <div class="row">
-                <div class="col-4">
-                    <div class="card player1-glow" id="player1-glow">
-                        <div class="card-body" id="player-one">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="current-roll"></div>
-                            <button class="btn btn-success mt-3" id="roll-dice">Roll Dice</button>
-                            <br>
-                            <button class="btn btn-danger mt-3" id="hold">Hold</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card player2-glow" id="player2-glow">
-                        <div class="card-body" id="player-two">
-                        </div>
-                    </div>
+        <!-- <form id="select-player">
+            <div>
+                <select name="Player Select" id="player-select" class="form-select">
+                    <option value="0">Please select the number of players</option>
+                    <option value="1">Single Player</option>
+                    <option value="2">Two Player</option>
+                </select>
+        </form> -->
+        <form id="game-board">
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="card player1-glow" id="player1-glow">
+                <div class="card-body">
+                    <h2 class="card-title">Player One:</h2>
+                    <p class="card-text" id="player-one"></p>
                 </div>
             </div>
-        </form>
+        </div>
+        <div class="col-4">
+            <div class="card dice-glow" id="dice-glow">
+                <img src="img/five.png" alt="photo of a die when rolled">
+                <div class="card-body">
+                    <div id="current-roll"></div>
+                    <button class="btn btn-success mt-3" id="roll-dice">Roll Dice</button>
+                    <br>
+                    <button class="btn btn-danger mt-3" id="hold">Hold</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card player2-glow" id="player2-glow">
+                <div class="card-body">
+                    <h2 class="card-title">Player Two:</h2>
+                    <p class="card-text" id="player-two"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
     </div>
 </body>
 
-</html>
+</html>u
