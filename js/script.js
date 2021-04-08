@@ -125,6 +125,5 @@ $(document).ready(function () {
 
 
 
-// build marker for current player
 // build out computer player option if everything is complete
 // use two card views for each player that will display the running totals. Each will have their own buttons per card.
