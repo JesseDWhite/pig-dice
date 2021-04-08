@@ -19,14 +19,30 @@
     <h1>Pig Dice</h1>
     <div class="container">
         <form>
-            <button class="btn btn-success" id="roll-dice">Roll Dice</button>
-            <div id="player-one">
-
+            <div class="row">
+                <div class="col-4">
+                    <div class="card player1-glow" id="player1-glow">
+                        <div class="card-body" id="player-one">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="current-roll"></div>
+                            <button class="btn btn-success mt-3" id="roll-dice">Roll Dice</button>
+                            <br>
+                            <button class="btn btn-danger mt-3" id="hold">Hold</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card player2-glow" id="player2-glow">
+                        <div class="card-body" id="player-two">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="player-two">
-
-            </div>
-            <button class="btn btn-danger" id="hold">Hold</button>
         </form>
     </div>
 </body>
